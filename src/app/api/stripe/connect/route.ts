@@ -34,8 +34,8 @@ export async function GET(req: NextRequest) {
       if (integrateStripeAccount) {
         const accountLink = await stripe.accountLinks.create({
           account: account.id,
-          refresh_url: `http://localhost:3000/callback/stripe/refresh`,
-          return_url: `http://localhost:3000/group/${groupid}/settings/integrations`,
+          refresh_url: `https://grouple-kohl.vercel.app/callback/stripe/refresh`,
+          return_url: `https://grouple-kohl.vercel.app/group/${groupid}/settings/integrations`,
           type: "account_onboarding",
         })
         console.log(accountLink)
