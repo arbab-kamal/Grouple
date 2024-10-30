@@ -20,7 +20,7 @@ const Affiliate = async ({ params }: Props) => {
            https://grouple-kohl.vercel.app/affiliates/
             {affiliate.affiliate?.id}
             <CopyButton
-              content={`http://localhost:3000/affiliates/${affiliate.affiliate?.id}`}
+              content={`https://grouple-kohl.vercel.app/affiliates/${affiliate.affiliate?.id}`}
             />
           </div>
           <CardDescription className="text-themeTextGray">
